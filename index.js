@@ -2,7 +2,7 @@ const Discord = require('discord.js');
 
 const bot = new Discord.Client();
 
-const token = 'ODE0NDcyNTkxMjg4MDQxNDky.YDeWtQ.7aaDYj01MDvTQl0NcCffq5xuUWM';
+const token = process.env.JAUL_ENV;
 
 bot.login(token)
 bot.on('ready', () => {
